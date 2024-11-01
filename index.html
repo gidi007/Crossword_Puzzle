@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="https://gidi007.github.io/GameZone/" aria-label="Home" class="home-link">
+            <i class="fas fa-home home-icon"></i>
+        </a>
+    </header>
+
+    <main class="container">
+        <section class="controls">
+            <button class="btn" id="btnCreate" disabled>Create</button>
+            <button class="btn" id="btnPlay" disabled>Play</button>
+            <button class="btn" id="btnReset">Reset</button>
+            <button class="btn" id="btnCheck">Check Answers</button>
+            <button class="btn shuf" id="btnGen">Shuffle</button>
+        </section>
+
+        <div id="crossword" class="crossword"></div>
+
+        <section class="clues">
+            <div class="clueBlock" id="cluesAcross">
+                <h2 class="clueDirection">ACROSS</h2>
+            </div>
+            <div class="clueBlock" id="cluesDown">
+                <h2 class="clueDirection">DOWN</h2>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

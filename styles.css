@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.home-link .home-icon {
+  font-size: 30px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #333;
+}
+
+.clues {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.clueBlock {
+  width: 45%;
+  text-align: left;
+}
+
+.clueDirection {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.crossword {
+  display: grid;
+  gap: 1px;
+  background-color: #ccc;
+  margin: 20px;
+}
+
+.square {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.char {
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+}
